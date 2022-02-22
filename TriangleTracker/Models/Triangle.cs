@@ -41,7 +41,14 @@ namespace TriangleTracker
 
     public bool IsNotATriangle(int length1, int length2, int length3)
     {
-      return false;
+      if((length1 > (length2 + length3)) || (length2 > (length1 + length3)) || (length3 > (length1 + length2)))
+      {
+        return true;
+      }
+      else
+      {
+        return false;
+      }
     }
   }
 }
