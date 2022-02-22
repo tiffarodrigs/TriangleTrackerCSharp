@@ -38,5 +38,10 @@ namespace TriangleTracker
         return false;
       }
     }
+
+    public bool IsNotATriangle(int length1, int length2, int length3)
+    {
+      return false;
+    }
   }
 }

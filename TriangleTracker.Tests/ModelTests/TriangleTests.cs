@@ -34,5 +34,12 @@ namespace TriangleTracker.Tests
       Assert.AreEqual(true, testTriangle.IsScalene(5,6,4));
     }
 
+[TestMethod]
+    public void IsNotATriangle_CheckIfNotATriangle_True()
+    {
+      Triangle testTriangle = new Triangle();
+      Assert.AreEqual(true, testTriangle.IsNotATriangle(5,6,15));
+    }
+
   }
 }
