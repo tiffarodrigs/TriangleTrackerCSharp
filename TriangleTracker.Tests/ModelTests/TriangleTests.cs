@@ -14,31 +14,31 @@ namespace TriangleTracker.Tests
     // }
 
     [TestMethod]
-    public void IsEquilateral_CheckIfTriangleIsEquilateral()
+    public void CheckTriangle_CheckIfTriangleIsEquilateral_True()
     {
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(true, testTriangle.IsEqualateral(4,4,4));
+      Assert.AreEqual("IsEquilateral", testTriangle.CheckTriangle(4,4,4));
     }
 
     [TestMethod]
-    public void IsIsosceles_CheckIfTriangleIsIsoceles()
+    public void CheckTriangle_CheckIfTriangleIsIsoceles_True()
     {
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(true, testTriangle.IsIsosceles(4,4,3));
+      Assert.AreEqual("IsIsoceles", testTriangle.CheckTriangle(4,4,3));
     }
 
     [TestMethod]
-    public void IsScalene_CheckIfTrianlgeIsScalene_True()
+    public void CheckTriangle_CheckIfTrianlgeIsScalene_True()
     {
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(true, testTriangle.IsScalene(5,6,4));
+      Assert.AreEqual("IsScalene", testTriangle.CheckTriangle(5,6,4));
     }
 
 [TestMethod]
-    public void IsNotATriangle_CheckIfNotATriangle_True()
+    public void CheckTriangle_CheckIsNotATriangle_True()
     {
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(true, testTriangle.IsNotATriangle(5,6,15));
+      Assert.AreEqual("IsNotATriangle", testTriangle.CheckTriangle(5,6,15));
     }
 
   }
