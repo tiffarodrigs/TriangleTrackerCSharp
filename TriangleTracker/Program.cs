@@ -14,6 +14,10 @@ namespace TriangleProgram
 
       Console.WriteLine("Enter the length of side 3: ");
       int length3 = int.Parse(Console.ReadLine());
+
+      Triangle triangleObject = new Triangle();
+
+      Console.WriteLine(triangleObject.CheckTriangle(length1,length2,length3));
     }
   }
 }
